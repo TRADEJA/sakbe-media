@@ -1,0 +1,132 @@
+<!-- SAKBE — TOP BLOCK -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+.sk{--amber:#633806;--cream:#FAEEDA;--gold:#FAC775;--ink:#2b2118;--muted:#8a7a68;font-family:Inter,system-ui,sans-serif;color:var(--ink);width:100%;margin:0 auto;text-align:center}
+.sk *{box-sizing:border-box}
+.sk a{text-decoration:none}
+.sk .es{font-style:italic;color:var(--muted);font-size:.92em;display:block;margin-top:2px}
+.sk-hero{position:relative;min-height:78vh;display:flex;align-items:center;justify-content:center;padding:60px 24px;overflow:hidden;background:var(--amber)}
+.sk-slides,.sk-slides div{position:absolute;inset:0}
+.sk-slides div{background:center/cover no-repeat;opacity:0;animation:skfade 36s infinite}
+.sk-slides div:nth-child(2){animation-delay:6s}.sk-slides div:nth-child(3){animation-delay:12s}
+.sk-slides div:nth-child(4){animation-delay:18s}.sk-slides div:nth-child(5){animation-delay:24s}
+.sk-slides div:nth-child(6){animation-delay:30s}
+@keyframes skfade{0%{opacity:0;transform:scale(1)}5%{opacity:1}17%{opacity:1}22%{opacity:0;transform:scale(1.07)}100%{opacity:0;transform:scale(1.07)}}
+@media (prefers-reduced-motion:reduce){.sk-slides div{animation:none}.sk-slides div:first-child{opacity:1}}
+.sk-hero:after,.sk-rise:after{content:"";position:absolute;inset:0;background:linear-gradient(rgba(40,25,10,.45),rgba(40,25,10,.6))}
+.sk-hero>.in,.sk-rise>.in{position:relative;z-index:1}
+.sk-hero h1{font-family:'Playfair Display',serif;font-weight:400;font-size:clamp(48px,10vw,92px);letter-spacing:.16em;margin:0 0 0 .16em;color:var(--cream)}
+.sk-hero p{color:var(--gold);font-size:18px;margin:10px 0 0}
+.sk-hero .es,.sk-rise .es{color:#EF9F27;margin-bottom:28px}
+.sk-btn{display:inline-block;background:var(--amber);color:var(--cream)!important;font-weight:500;font-size:15px;padding:13px 24px;border-radius:8px}
+.sk-btn.light{background:var(--cream);color:var(--amber)!important}
+.sk-sec{max-width:880px;margin:0 auto;padding:64px 24px}
+.sk-tag{font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin:0 0 6px}
+.sk h2{font-family:'Playfair Display',serif;font-weight:400;font-size:clamp(34px,6vw,52px);line-height:1.1;margin:0}
+.sk-player{max-width:640px;margin:28px auto 0}
+.sk-player iframe{display:block;width:100%;height:352px;border:0;border-radius:12px}
+.sk-also{font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin:36px 0 0}
+.sk-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:16px;max-width:760px;margin:16px auto 0}
+.sk-tile{display:block;border-radius:12px;overflow:hidden;background:var(--cream)}
+.sk-tile .img{aspect-ratio:16/9;background:var(--gold) center/cover no-repeat}
+.sk-tile .txt{padding:12px 14px}
+.sk-tile b{font-family:'Playfair Display',serif;font-weight:500;font-size:18px;color:var(--amber);display:block}
+.sk-rise{position:relative;min-height:62vh;display:flex;align-items:center;justify-content:center;padding:72px 24px;overflow:hidden;background:var(--amber) url('https://raw.githubusercontent.com/sakbechannel/Sakbe-site/main/IMG_2873.jpeg') center/cover no-repeat}
+.sk-rise .sk-tag{color:var(--gold)}
+.sk-rise h2{color:var(--cream);font-size:clamp(34px,7vw,60px)}
+.sk-rise p.lead{color:var(--cream);font-size:18px;line-height:1.6;max-width:30em;margin:0 auto}
+.sk-rise .es2{display:block;color:#f3d9b0;font-style:italic;font-size:16px;margin-top:6px}
+.sk-pills{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-top:26px}
+.sk-pills span{border:1px solid var(--gold);border-radius:999px;padding:9px 18px;font-size:14px;color:var(--cream);background:rgba(40,25,10,.35)}
+.sk-list{list-style:none;padding:0;margin:26px auto 30px;max-width:520px;text-align:left}
+.sk-list li{padding:10px 0 10px 28px;position:relative;border-bottom:1px solid #eadfcd;font-size:16px}
+.sk-list li:before{content:"✓";position:absolute;left:0;color:var(--amber);font-weight:500}
+.sk-venue{background:var(--cream)}
+.sk-lead{font-size:17px;line-height:1.65;margin:18px auto 0;max-width:36em}
+form{margin-left:auto !important;margin-right:auto !important;max-width:420px}
+form input[type=email],form input[type=text]{background:#fff !important;border:1px solid #d9c7a8 !important;border-radius:8px !important;color:#2b2118 !important}
+form button,form input[type=submit],form [type=submit]{background:#633806 !important;color:#FAEEDA !important;border:0 !important;border-radius:8px !important}
+.sk-watch{background:#2b2118;color:var(--cream)}
+.sk-watch .sk-tag{color:var(--gold)}.sk-watch h2{color:var(--cream)}.sk-watch .es{color:#d9bf98}
+.sk-phones{display:flex;flex-wrap:wrap;justify-content:center;gap:22px;margin-top:30px}
+.sk-phone{width:min(260px,42vw)}
+.sk-phone video{display:block;width:100%;aspect-ratio:9/16;object-fit:cover;border-radius:18px;border:6px solid #1a130d;box-shadow:0 10px 30px rgba(0,0,0,.45);background:#000}
+.sk-phone b{display:block;font-family:'Playfair Display',serif;font-weight:400;font-size:18px;margin-top:12px;color:var(--cream)}
+.sk-follow{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-top:30px}
+.sk-follow a{border:1px solid var(--gold);border-radius:999px;padding:9px 18px;font-size:14px;color:var(--cream)!important}
+.sk-follow a:hover{background:rgba(250,199,117,.15)}
+.sk-rise h3{font-family:'Playfair Display',serif;font-weight:400;font-style:italic;color:var(--gold);font-size:clamp(20px,3.5vw,26px);margin:14px 0 18px}
+form .actions,form ul.actions,form li{justify-content:center !important;text-align:center !important}
+form button,form [type=submit]{display:block !important;width:100% !important;margin-left:auto !important;margin-right:auto !important}
+</style>
+<div class="sk">
+  <section class="sk-hero">
+    <div class="sk-slides"><div style="background-image:url('https://raw.githubusercontent.com/sakbechannel/Sakbe-site/main/IMG_2869.jpeg')"></div><div style="background-image:url('https://raw.githubusercontent.com/sakbechannel/Sakbe-site/main/IMG_2870.jpeg')"></div><div style="background-image:url('https://raw.githubusercontent.com/sakbechannel/Sakbe-site/main/IMG_2871.jpeg')"></div><div style="background-image:url('https://raw.githubusercontent.com/sakbechannel/Sakbe-site/main/IMG_2872.jpeg')"></div><div style="background-image:url('https://raw.githubusercontent.com/sakbechannel/Sakbe-site/main/IMG_2873.jpeg')"></div><div style="background-image:url('https://raw.githubusercontent.com/sakbechannel/Sakbe-site/main/IMG_2874.jpeg')"></div></div>
+    <div class="in">
+      <h1>SAKBE</h1>
+      <p>Latin jazz from Tulum</p>
+      <span class="es">Jazz latino desde Tulum</span>
+      <a class="sk-btn light" href="#listen">Listen now · Escucha ahora</a>
+    </div>
+  </section>
+  <section class="sk-sec" id="listen">
+    <p class="sk-tag">Listen · Escucha</p>
+    <h2>Listen now</h2>
+    <span class="es">Escucha ahora</span>
+    <div class="sk-player"><iframe src="https://open.spotify.com/embed/album/2bWLrXknJsnpHllb7Bv3ur?theme=0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" title="Sakbe on Spotify"></iframe></div>
+    <p class="sk-also">Also on · También en</p>
+    <div class="sk-grid">
+      <a class="sk-tile" href="https://open.spotify.com/album/2bWLrXknJsnpHllb7Bv3ur" target="_blank" rel="noopener"><div class="img" style="background-image:url('https://raw.githubusercontent.com/sakbechannel/Sakbe-site/main/IMG_2869.jpeg')"></div><div class="txt"><b>Spotify</b><span class="es">Escuchar en Spotify</span></div></a>
+      <a class="sk-tile" href="https://distrokid.com/hyperfollow/sakbe/offering" target="_blank" rel="noopener"><div class="img" style="background-image:url('https://raw.githubusercontent.com/sakbechannel/Sakbe-site/main/IMG_2870.jpeg')"></div><div class="txt"><b>Apple Music</b><span class="es">Escuchar en Apple Music</span></div></a>
+      <a class="sk-tile" href="https://distrokid.com/hyperfollow/sakbe/offering" target="_blank" rel="noopener"><div class="img" style="background-image:url('https://raw.githubusercontent.com/sakbechannel/Sakbe-site/main/IMG_2872.jpeg')"></div><div class="txt"><b>iTunes</b><span class="es">Comprar en iTunes</span></div></a>
+      <a class="sk-tile" href="https://distrokid.com/hyperfollow/sakbe/offering" target="_blank" rel="noopener"><div class="img" style="background-image:url('https://raw.githubusercontent.com/sakbechannel/Sakbe-site/main/IMG_2871.jpeg')"></div><div class="txt"><b>Amazon Music</b><span class="es">Escuchar en Amazon Music</span></div></a>
+      </div>
+  </section>
+  <section class="sk-watch">
+    <div class="sk-sec">
+      <p class="sk-tag">Watch · Mira</p>
+      <h2>Watch now</h2>
+      <span class="es">Mira ahora</span>
+      <div class="sk-phones">
+        <div class="sk-phone"><video controls playsinline preload="none" poster="https://cdn.jsdelivr.net/gh/TRADEJA/sakbe-media@main/watch-flor.jpg"><source src="https://cdn.jsdelivr.net/gh/TRADEJA/sakbe-media@main/watch-flor.mp4" type="video/mp4"></video><b>Flor de Cempasúchil</b></div>
+        <div class="sk-phone"><video controls playsinline preload="none" poster="https://cdn.jsdelivr.net/gh/TRADEJA/sakbe-media@main/watch-ven.jpg"><source src="https://cdn.jsdelivr.net/gh/TRADEJA/sakbe-media@main/watch-ven.mp4" type="video/mp4"></video><b>Ven</b></div>
+      </div>
+      <div class="sk-follow">
+        <a href="https://www.instagram.com/sakbechannel" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.tiktok.com/@sakbe77" target="_blank" rel="noopener">TikTok</a>
+        <a href="https://www.facebook.com/profile.php?id=61594317181150" target="_blank" rel="noopener">Facebook</a>
+      </div>
+    </div>
+  </section>
+  <section class="sk-rise">
+    <div class="in">
+      <p class="sk-tag">Coming soon · Muy pronto</p>
+      <h2>Rising from the flames</h2>
+      <span class="es">Renaciendo de las llamas</span>
+      <h3>Our music videos, back on your big screen</h3>
+      <p class="lead">Full Sakbe music videos are coming to the apps on your TV.<span class="es2">Nuestros videos musicales, de vuelta en tu pantalla grande. Muy pronto en las apps de tu televisión.</span></p>
+      <div class="sk-pills"><span>Apple Music</span><span>Spotify</span><span>Amazon Music</span><span>Tidal</span></div>
+    </div>
+  </section>
+  <section class="sk-venue">
+    <div class="sk-sec">
+      <p class="sk-tag">For venues · Para negocios</p>
+      <h2>Music for your property</h2>
+      <span class="es">Música para su propiedad</span>
+      <p class="sk-lead">Hotels, restaurants, cafés and spas across the Riviera Maya use Sakbe to set the mood. Ad-free, continuous music, made in Tulum.<span class="es">Hoteles, restaurantes, cafés y spas de la Riviera Maya usan Sakbe para crear ambiente. Música continua y sin anuncios, hecha en Tulum.</span></p>
+      <ul class="sk-list">
+        <li>Ad-free continuous sessions<span class="es">Sesiones continuas sin anuncios</span></li>
+        <li>Lobby-screen video loops<span class="es">Videos continuos para pantallas de recepción</span></li>
+        <li>Custom sessions made for your space<span class="es">Sesiones personalizadas para su espacio</span></li>
+        <li>Based in Tulum — local service<span class="es">Con base en Tulum — servicio local</span></li>
+      </ul>
+      <a class="sk-btn" href="mailto:hello@sakbechannel.com">Request a session · Solicitar una sesión</a>
+    </div>
+  </section>
+  <section class="sk-sec" style="padding-bottom:20px">
+    <p class="sk-tag">Follow the journey · Sigue el camino</p>
+    <h2>Follow the journey</h2>
+    <span class="es">Sigue el camino</span>
+    <p class="sk-lead" style="margin-top:12px">New songs, videos and the stories behind them, about once a month.<span class="es">Canciones, videos y las historias detrás de ellos, más o menos una vez al mes.</span></p>
+  </section>
+</div>
